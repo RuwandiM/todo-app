@@ -41,8 +41,8 @@ To run the app locally or contribute:
 
 ```bash
 # Clone the repo
-git clone https://github.com/RuwandiM/todo-desktop-app
-cd todo-desktop-app
+git clone https://github.com/RuwandiM/todo-app
+cd todo-app
 
 # Install dependencies
 npm install
