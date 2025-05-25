@@ -1,0 +1,235 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 24px;
+
+  color: #0f0f0f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 5vh;
+  background-color: white;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f0f0f;
+  margin-bottom: 0px;
+}
+
+/* input container */
+.inputContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.inputField {
+  padding: 0.6em 1.2em;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+@media (min-width: 1024px) {
+  .inputField {
+    width: 88%;
+  }
+}
+
+@media (min-width: 768px) {
+  .inputField {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputField {
+    width: 70%;
+  }
+}
+
+.addButton{
+  padding: 0.6em 1.2em;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #096B68;
+  color: #E7F2E4;
+  border: none;
+}
+
+.addButton:hover{
+  background-color: #06202B;
+  color: #E7F2E4;
+  cursor: pointer;
+}
+
+/* to do list */
+.taskList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.taskItem {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.tasktext {
+  font-size: 13px;
+  color:#0f0f0f;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.tasktext.completed {
+  text-decoration: line-through;
+  color: #c9d2c6;
+}
+
+.deleteButton {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #096B68;
+}
+
+.customhr {
+  border: none;
+  height: 1px;
+  background-color: #dfdfdf;
+  margin: 10px 0;
+}
+
+/* to do header */
+.todoHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoCounts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.completedTaskCount {
+  background-color: rgb(241, 247, 249);
+  padding: 2px 5px;
+  border-radius: 20px;
+  border: 1px solid rgb(1, 33, 40);
+  color: rgb(1, 33, 40); 
+}
+
+.remainingTaskCount {
+  background-color: rgb(249, 255, 255);
+  padding: 2px 5px;
+  border-radius: 20px;
+  border: 1px solid rgb(64, 48, 1);
+  color: rgb(0, 18, 17);
+}
+
+.filterDropdown {
+  padding: 0.6em 1.2em;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #E7F2E4;
+  color: #1f1e1e;
+  border: none;
+}
+
+select {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* title bar */
+.titlebar {
+  background-color: #E7F2E4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  padding: 0 10px;
+  -webkit-app-region: drag;
+}
+
+.window-buttons button {
+  margin-left: 5px;
+  background: transparent;
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.logo {
+  width: 65px;
+  height: 25px;
+}
+
+.titlebarIcon {
+  width: 10px;
+  height: 10px;
+  color: rgb(70, 68, 68);
+}
+
+/* no data found */
+.noDataSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noDataImage {
+  width: 50%;
+  height: 50%;
+}
+
+.noDataText {
+  font-size: 13px;
+  font-weight: 700px;
+}
+
+
+
+
